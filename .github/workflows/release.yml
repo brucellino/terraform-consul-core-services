@@ -21,13 +21,13 @@ jobs:
           fetch-depth: 0
       - name: Get Consul
         run: |
-          curl -fSL https://releases.hashicorp.com/consul/1.12.3/consul_1.12.3_linux_amd64.zip \
+          curl -fSL https://releases.hashicorp.com/consul/1.18.0/consul_1.18.0_linux_amd64.zip \
           | gunzip -> consul ; chmod u+x consul
       - name: Start Consul dev server
         run: ./consul agent -server -dev &
       - name: Get Terraform
         run: |
-          curl -fSL https://releases.hashicorp.com/terraform/1.2.3/terraform_1.2.3_linux_amd64.zip \
+          curl -fSL https://releases.hashicorp.com/terraform/1.7.5/terraform_1.7.5_linux_amd64.zip \
           | gunzip -> terraform ; chmod u+x terraform
       - name: Init terraform
         run: ./terraform -chdir=examples/${{ matrix.example }} init
