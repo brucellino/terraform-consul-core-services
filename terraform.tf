@@ -8,8 +8,11 @@
 # These will be declared in the terraform document which consumes the module.
 
 terraform {
-  required_version = ">1.2.0"
+  required_version = "~> 1.7.0"
   required_providers {
-    # Add your required providers here.
+    consul = {
+      source  = "hashicorp/consul"
+      version = "2.20.0"
+    }
   }
 }

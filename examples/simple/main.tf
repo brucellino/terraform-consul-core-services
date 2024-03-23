@@ -8,14 +8,13 @@
 
 # Declare your backends and other terraform configuration here
 # This is an example for using the consul backend.
-# terraform {
-#   backend "consul" {
-#     path = "test_module/simple"
-#   }
-# }
+terraform {
+  backend "consul" {
+    path = "terraform-core-services/simple"
+  }
+}
 
 
 module "example" {
   source = "../../"
-  dummy  = "test"
 }
