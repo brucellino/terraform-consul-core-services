@@ -26,7 +26,10 @@ These examples show how to use the module in your project, and are also use for 
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_consul"></a> [consul](#provider\_consul) | 2.20.0 |
+| <a name="provider_external"></a> [external](#provider\_external) | 2.3.3 |
 
 ## Modules
 
@@ -34,7 +37,14 @@ No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [consul_node.egi](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/node) | resource |
+| [consul_node.sites](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/node) | resource |
+| [consul_service.accounting_portal](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/service) | resource |
+| [consul_service.goc](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/service) | resource |
+| [consul_nodes.external](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/nodes) | data source |
+| [external_external.bdiis](https://registry.terraform.io/providers/hashicorp/external/latest/docs/data-sources/external) | data source |
 
 ## Inputs
 
@@ -42,5 +52,8 @@ No inputs.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_bdiis"></a> [bdiis](#output\_bdiis) | n/a |
+| <a name="output_service_endpoints"></a> [service\_endpoints](#output\_service\_endpoints) | n/a |
 <!-- END_TF_DOCS -->

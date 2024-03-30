@@ -18,3 +18,7 @@ terraform {
 module "example" {
   source = "../../"
 }
+
+output "test" {
+  value = module.example.service_endpoints
+}
