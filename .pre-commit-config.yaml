@@ -20,7 +20,10 @@ repos:
       - id: terraform_validate
       - id: terraform_trivy
       - id: terraform_docs
-        args: ["markdown", "--output-file", "README.md", "."]
+        args:
+          - --hook-config=--path-to-file=README.md
+          - --hook-config=--add-to-existing-file=true
+          - --hook-config=--use-standard-markers=true
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.28.0
     hooks:
