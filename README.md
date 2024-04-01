@@ -22,7 +22,9 @@ These examples show how to use the module in your project, and are also use for 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.7.0 |
-| <a name="requirement_consul"></a> [consul](#requirement\_consul) | 2.20.0 |
+| <a name="requirement_consul"></a> [consul](#requirement\_consul) | ~> 2.20 |
+| <a name="requirement_external"></a> [external](#requirement\_external) | ~> 2.3 |
+| <a name="requirement_nomad"></a> [nomad](#requirement\_nomad) | ~> 2.2 |
 
 ## Providers
 
@@ -30,6 +32,7 @@ These examples show how to use the module in your project, and are also use for 
 |------|---------|
 | <a name="provider_consul"></a> [consul](#provider\_consul) | 2.20.0 |
 | <a name="provider_external"></a> [external](#provider\_external) | 2.3.3 |
+| <a name="provider_nomad"></a> [nomad](#provider\_nomad) | 2.2.0 |
 
 ## Modules
 
@@ -39,16 +42,16 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [consul_node.egi](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/node) | resource |
-| [consul_node.sites](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/node) | resource |
-| [consul_service.accounting_portal](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/service) | resource |
-| [consul_service.goc](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/service) | resource |
-| [consul_nodes.external](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/nodes) | data source |
+| [consul_node.egi](https://registry.terraform.io/providers/hashicorp/consul/latest/docs/resources/node) | resource |
+| [consul_service.top-bdii](https://registry.terraform.io/providers/hashicorp/consul/latest/docs/resources/service) | resource |
+| [nomad_job.consul_esm](https://registry.terraform.io/providers/hashicorp/nomad/latest/docs/resources/job) | resource |
 | [external_external.bdiis](https://registry.terraform.io/providers/hashicorp/external/latest/docs/data-sources/external) | data source |
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_consul_esm_version"></a> [consul\_esm\_version](#input\_consul\_esm\_version) | variables.tf Use this file to declare the variables that the module will use. | `string` | `"0.7.1"` | no |
 
 ## Outputs
 
