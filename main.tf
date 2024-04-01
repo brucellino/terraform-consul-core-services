@@ -6,14 +6,6 @@ data "external" "bdiis" {
   query   = {}
 }
 
-# resource "consul_node" "egi" {
-#   name    = "EGI"
-#   address = "https://egi.eu"
-#   meta = {
-#     "external-node" = "true"
-#   }
-# }
-
 locals {
   service_endpoints = { for v in jsondecode(data.external.bdiis.result.output).SERVICE_ENDPOINT : v["@PRIMARY_KEY"] => {
     key                = v["@PRIMARY_KEY"]
