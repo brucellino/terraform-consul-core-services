@@ -42,9 +42,11 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [consul_node.egi](https://registry.terraform.io/providers/hashicorp/consul/latest/docs/resources/node) | resource |
-| [consul_service.top-bdii](https://registry.terraform.io/providers/hashicorp/consul/latest/docs/resources/service) | resource |
-| [nomad_job.consul_esm](https://registry.terraform.io/providers/hashicorp/nomad/latest/docs/resources/job) | resource |
+| [consul_node.egi](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/node) | resource |
+| [consul_node.sites](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/node) | resource |
+| [consul_service.accounting_portal](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/service) | resource |
+| [consul_service.goc](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/service) | resource |
+| [consul_nodes.external](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/nodes) | data source |
 | [external_external.bdiis](https://registry.terraform.io/providers/hashicorp/external/latest/docs/data-sources/external) | data source |
 
 ## Inputs
