@@ -11,7 +11,6 @@ data "external" "bdiis" {
   query   = {}
 }
 
-
 locals {
   service_endpoints = { for v in jsondecode(data.external.bdiis.result.output).SERVICE_ENDPOINT : v["@PRIMARY_KEY"] => {
     key                = v["@PRIMARY_KEY"]
