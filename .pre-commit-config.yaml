@@ -2,19 +2,19 @@
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
   - repo: https://github.com/Yelp/detect-secrets
-    rev: v1.4.0
+    rev: v1.5.0
     hooks:
       - id: detect-secrets
         args: ["--baseline", ".secrets.baseline"]
   - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.88.3
+    rev: v1.109.2
     hooks:
       - id: terraform_fmt
       - id: terraform_validate
@@ -23,15 +23,15 @@ repos:
         args:
           - --hook-config=--path-to-file=README.md
           - --hook-config=--add-to-existing-file=true
-          - --hook-config=--use-standard-markers=true
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.28.0
+    rev: "0.38.2"
     hooks:
       - id: check-github-actions
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-    rev: v9.13.0
+    rev: v9.27.0
     hooks:
       - id: commitlint
-        additional_dependencies: ['@commitlint/config-conventional', '@commitlint/cli']
+        additional_dependencies:
+          ["@commitlint/config-conventional", "@commitlint/cli"]
 ci:
   skip: [terraform_fmt, terraform_validate, terraform_trivy, commitlint]

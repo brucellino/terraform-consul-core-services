@@ -21,7 +21,7 @@ These examples show how to use the module in your project, and are also use for 
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.7.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.16.0 |
 | <a name="requirement_consul"></a> [consul](#requirement\_consul) | ~> 2.20 |
 | <a name="requirement_external"></a> [external](#requirement\_external) | ~> 2.3 |
 | <a name="requirement_nomad"></a> [nomad](#requirement\_nomad) | ~> 2.2 |

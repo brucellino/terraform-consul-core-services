@@ -1,0 +1,9 @@
+[env]
+# NODE_ENV = "development"
+# _.file = ".env"                # load vars from a dotenv file
+# _.path = "./node_modules/.bin" # add a directory to PATH
+
+[tools]
+terraform = "1.16"
+consul = "2.0.4"
+prek = "0.5.5"
